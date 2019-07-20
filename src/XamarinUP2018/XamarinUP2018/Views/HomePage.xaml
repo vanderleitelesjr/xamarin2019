@@ -7,9 +7,12 @@
              x:Class="XamarinUP2018.Views.HomePage">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Entry Text="{Binding Text}" />
+            <Entry Visual="Material" Text="{Binding Text}" />
             <Label Text="{Binding Text}" />
-            <Button Text="Alert" Command="{Binding ShowAlert}" />
+            <Button Visual="Material" Text="Alert" Command="{Binding ShowAlert}" />
+            <ActivityIndicator 
+                IsVisible="{Binding IsBusy}" 
+                IsRunning="{Binding IsBusy}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
